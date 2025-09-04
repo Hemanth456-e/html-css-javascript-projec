@@ -1,0 +1,116 @@
+/* Reset some default styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Background setup */
+body {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url("images/background.jpg") no-repeat center center/cover;
+}
+
+/* Wrapper for the login box */
+.wrapper {
+  width: 350px;
+  padding: 30px;
+  border-radius: 12px;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+  text-align: center;
+  color: #fff;
+}
+
+/* Login heading */
+.wrapper h1 {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+/* Input fields */
+.input-box {
+  position: relative;
+  margin: 15px 0;
+}
+
+.input-box input {
+  width: 100%;
+  padding: 12px 40px 12px 12px;
+  border: none;
+  outline: none;
+  border-radius: 8px;
+  background: rgba(255, 255, 255, 0.2);
+  color: #fff;
+  font-size: 1em;
+}
+
+/* Icons inside input box */
+.input-box i {
+  position: absolute;
+  right: 12px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 20px;
+  color: #ddd;
+}
+
+/* Checkbox + Forgot password */
+.remember-forget {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.9em;
+  margin: 10px 0 20px;
+}
+
+.remember-forget label {
+  cursor: pointer;
+}
+
+.remember-forget a {
+  color: #ffcc70;
+  text-decoration: none;
+}
+
+.remember-forget a:hover {
+  text-decoration: underline;
+}
+
+/* Login button */
+.stn {
+  width: 100%;
+  padding: 12px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1em;
+  font-weight: bold;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  color: #fff;
+  cursor: pointer;
+  transition: 0.3s ease;
+}
+
+.stn:hover {
+  background: linear-gradient(135deg, #764ba2, #667eea);
+  transform: translateY(-2px);
+}
+
+/* Register link */
+.register-link {
+  margin-top: 15px;
+  font-size: 0.9em;
+}
+
+.register-link a {
+  color: #ffcc70;
+  text-decoration: none;
+}
+
+.register-link a:hover {
+  text-decoration: underline;
+}
